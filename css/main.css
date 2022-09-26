@@ -1,0 +1,16 @@
+body {
+    color:#510000;
+    font-size:medium;
+    text-align:justify;
+    /*background-image: url(.././Imagenes/FondoCocina.jpg);*/
+    background-color: #FFE873
+}
+
+h1, h2{
+    text-decoration: underline;
+}
+
+.imagen{
+    max-width: 400px;
+    max-height: 400px;
+}
