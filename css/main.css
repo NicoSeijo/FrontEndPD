@@ -1,87 +1,240 @@
-/*Body*/
-body {
-    margin-left: 30px;
-    color:#510000;
-    font-size:medium;
-    background-color: #FFE873
+/*BODY*/
+body{
+    background-color: rgb(18, 18, 18);
+    color: white;
 }
 
-/*Elementos "sueltos" del body*/
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap');
+/*font-family: 'DM Sans', sans-serif;*/
 
-p{font-size: 20px;}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/*font-family: 'Caveat', cursive;*/
 
-li{font-size: 17px;}
+@font-face {
+    font-family: "fira code reg";
+    src: url("../fuentes/FiraCode-Regular.ttf")
+    format('truetype');
+}
 
-/*Flexbox*/
+@font-face{
+    font-family: "fira code med";
+    src: url("../fuentes/FiraCode-Medium.ttf")
+    format('truetype');
+}
 
 /*HEADER*/
 header{
-    margin: 10px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap: wrap;
+    background-color: rgb(18, 18, 18);
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 1.5%;
 }
 
+.cf-header{
+    margin-right: 6%;
+    margin-left: 6%;
+
+    display:flex;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+/*LOGO*/
 .logo{
-    width: 125px;
-    height: 125px;
-    margin-top:10px;    
+    display:flex;
+    justify-content:center;
+    width: 5%;
+}
+
+.img-logo{
+    width: 100%; /*ancho*/
+    height: 100%; /*alto*/
+}
+
+/*TITULO DE LA PAGINA*/
+.cf-tituloPag{
+    display:flex;
+    justify-content: center;
+
+    width: 70%;
+    margin-right: 2.5%;
+    margin-left: 7.5%;
 
 }
 
 .cf-tituloPag h1{
-    text-decoration: underline;
+    font-family: 'DM Sans', sans-serif;
 }
 
-.redSocial{
-    width: 50px;
-    height:50px;
-    margin-right: 15px;
+/*PANEL DE REDES SOCIALES*/
+.cf-redSocial{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 15%;
+}
+
+.a-redSocial{
+    width: 20%;
+    height: 50%;
+}
+
+.img-redSocial{
+    width: 100%;
+    height: 100%;
 }
 
 /*SECTION*/
+section{
+    background-color: rgb(26, 26, 26);
+    margin-left: 6%;
+    margin-right: 6%;
+    height: fit-content;
+}
+
+section p{
+    width: 50%;
+    font-size: 1.2rem;
+    font-family: "fira code reg";
+}
+
+section h1{
+    font-size: 1.5rem;
+    font-family: "fira code med";
+}
+
+.cf-contenido-section{
+    background-color: rgb(26, 26, 26);
+    margin-left: 1%;
+    margin-right: 1%;
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cf-titulo{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .cf-introduccion{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.introduccion-parrafo{
-    flex-grow: 1;
+.cf-introduccion p{
+    margin-top: 0%;
+    text-align:center;
+    margin-bottom: 2.5%;
 }
 
-.introduccion-imagen{
-    flex-grow: 3;
-}
-.imagen{
-    max-width: 400px;
-    max-height: 400px;
-}
+/*INGREDIENTES*/
 
-.cf-listas{
+.cf-ingredientes{
     display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    width: 100%;
 }
 
-.listas-ingredientes{
-    flex-grow: 3;
+.ingredientes-lista h2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: 'Caveat', cursive;
 }
 
-.listas-preparacion{
-    flex-grow: 1;
+li{
+    font-family: 'Caveat', cursive;
+    margin-bottom: 1.1%;
 }
 
+.ingredientes-lista{
+    margin-left: 1%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.ingredientes-lista ul{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    margin-top: 1%;
+}
+
+.ingredientes-lista li{
+    font-size: 1.1rem;
+    margin-bottom: 0.1%;
+}
+
+/*PREPARACION*/
+.cf-preparacion{
+    margin-left: 1%;
+    margin-top:4%;
+    margin-bottom: 1%;
+    width: 100%;
+    height: fit-content;
+}
+.cf-preparacion h2{
+    font-family: 'Caveat', cursive;
+}
+
+.cf-preparacion ol{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+}
+
+.cf-preparacion li{
+    font-size: 1rem;
+}
+
+/*ESP*/
+.especificaciones{
+    margin-left: 1%;
+    width: 100%;
+    height: fit-content;
+}
+
+.especificaciones h2{
+    margin-top: 0%;
+    font-family: "fira code med";
+}
+
+.especificaciones ul{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.especificaciones li{
+    font-size: 1.2rem;
+    font-family: "fira code reg";
+}
+
+/*EXTRAS*/
 .cf-extras{
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 5px;
-    margin-bottom: 50px;
+    align-items: flex-start;;
+
+    height:fit-content;
+    margin-bottom: 2%;
 }
+
 
 /*FOOTER*/
 footer{
-    margin: 50px;
     display:flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items:center;
 }
