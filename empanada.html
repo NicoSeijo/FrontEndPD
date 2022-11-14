@@ -9,7 +9,7 @@
     <meta name="autor" content="Nicolás Seijo">
     <meta name="viewport" content="width=device-width, initial-scale:1.0">
 
-    <title>TP7 - EMPANADA</title>
+    <title>TP JS - EMPANADA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
@@ -48,14 +48,25 @@
         </div>
     </header>
 
+    <!--BOTON-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="cfBotonMO">
+                <button type="button" class="btn btn-dark btn-lg" id="botonMO" onclick="darkMode()"> Modo Oscuro
+                </button>
+            </div>
+        </div>
+    </div>
+
     <section>
         <div class="cf-contenido-section">
             <div class="cf-titulo">
-                <h1>La <b>Humita Salteña</b></h1>
+                <h1>Las <b>Empanadas Tucumanas</b></h1>
             </div>
             <div class="cf-introduccion">
-                <p>La humita es una comida basada en el maíz, consiste en una pasta o masa de maíz levemente
-                    aliñada, que puede ir envuelta y finalmente cocida o tostada<br> en las chalas del choclo.</p>
+                <p>Propias de la provincia de Tucumán se tratan de empanadas horneadas, donde una masa crocante contiene
+                    un relleno jugoso de carne de matambre, cebolla y cebolla de verdeo, huevos, comino y pimentón. La
+                    masa se prepara a base de harina, agua y grasa vacuna.</p>
             </div>
 
             <div class="cf-ingredientes">
@@ -183,6 +194,21 @@
         </div>
     </div>
 
+    <!--BOTON DATOS-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="cfBotonDatos">
+                <button type="button" class="btn btn-secondary btn-lg" onclick="datosCreador()"> MIS DATOS </button>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" id="cfBotonInicio">
+                <a href="index.html">
+                    <button type="button" class="btn btn-danger">VOLVER AL INICIO</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-mapa">
             <iframe
@@ -222,9 +248,13 @@
 
     </footer>
 
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

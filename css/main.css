@@ -1,7 +1,9 @@
 /*BODY*/
 body{
-    background-color: rgb(18, 18, 18);
-    color: white;
+    /*background-color: rgb(18, 18, 18);
+    color: white;*/
+    background-color:rgb(237, 237, 237);
+    color: black;
 }
 
 /*FUENTES*/
@@ -25,10 +27,10 @@ body{
 
 /*HEADER*/
 header{
-    background-color: rgb(18, 18, 18);
     margin-right: 0%;
     margin-left: 0%;
     margin-bottom: 1.5%;
+    margin-top: 1.5%;
 }
 
 .cf-header{
@@ -59,6 +61,7 @@ header{
 .cf-tituloPag{
     display:flex;
     justify-content: center;
+    align-items: center;
 
     width: 70%;
     margin-right: 2.5%;
@@ -92,7 +95,6 @@ header{
 
 /*SECTION*/
 section{
-    background-color: rgb(26, 26, 26);
     margin-left: 6%;
     margin-right: 6%;
     height: fit-content;
@@ -110,7 +112,6 @@ section h1{
 }
 
 .cf-contenido-section{
-    /*background-color: rgb(26, 26, 26);*/
     margin-left: 1%;
     margin-right: 1%;
 
@@ -242,6 +243,12 @@ li{
 .card-body{
     color:black;
     font-family: "fira code reg";
+}
+
+/*BOTON MODO OSCURO*/
+#cfBotonMO, #cfBotonDatos, #cfBotonInicio{
+    display:flex;
+    justify-content: center;
 }
 
 /*FOOTER*/

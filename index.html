@@ -9,10 +9,12 @@
     <meta name="autor" content="Nicolás Seijo">
     <meta name="viewport" content="width=device-width, initial-scale:1.0">
 
-    <title>TP7 - INICIO</title>
+    <title>TP JS - INICIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+
+    <script>alert("¡Bienvenido a mi página! ¡Muchísimas gracias por enseñarnos con tanta onda profe/s!")</script>
 </head>
 
 <body>
@@ -48,13 +50,22 @@
         </div>
     </header>
 
+    <!--BOTON MODO OSCURO-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="cfBotonMO">
+                <button type="button" class="btn btn-dark btn-lg" id="botonMO" onclick="darkMode()"> Modo Oscuro </button>
+            </div>
+        </div>
+    </div>
+
     <!--Aca pongo las cartas del BT-->
     <div class="container">
         <div class="row">
             <!--Fila de las cards-->
 
             <!--Pre-Título-->
-            <div class="col-xs-12 col-sm-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <h3 class="text-center"> Explorar Recetas </h3>
             </div>
 
@@ -104,7 +115,17 @@
         </div>
     </div>
 
+    <!--BOTON DATOS-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="cfBotonDatos">
+                <button type="button" class="btn btn-secondary btn-lg" onclick="datosCreador()"> MIS DATOS </button>
+            </div>
+        </div>
+    </div>
+
     <footer>
+
         <div class="footer-mapa">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6279255595089!2d-58.61436847078376!3d-34.641777995421506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb89d0191707b%3A0x9876a93494ca7958!2sLuis%20Lhoner%20455%2C%20B1706FVC%20Haedo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665651566494!5m2!1ses!2sar"
@@ -139,13 +160,14 @@
             </p>
         </div>
 
-
-
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
